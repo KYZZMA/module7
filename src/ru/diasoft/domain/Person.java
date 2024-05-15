@@ -4,11 +4,7 @@ public class Person {
     private String firstName;
     private String secondName;
     private int age;
-    private String phone;
-
-    {
-        phone = "Undefined";
-    }
+    private String phone = "Undefined";
 
     public Person(String firstName, String secondName, int age, String phone){
         this.firstName = firstName;

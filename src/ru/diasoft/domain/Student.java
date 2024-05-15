@@ -1,13 +1,8 @@
 package ru.diasoft.domain;
 
 public class Student extends Person{
-    private String group;
-    private double score;
-
-    {
-        group = "Undefined";
-        score = 0;
-    }
+    private String group = "Undefined";
+    private double score = 0;
     public Student(String firstName, String secondName, int age, String phone, String group, double score) {
         super(firstName, secondName, age, phone);
         setGroup(group);
