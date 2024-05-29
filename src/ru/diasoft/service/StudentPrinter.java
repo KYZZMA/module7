@@ -1,7 +1,10 @@
 package ru.diasoft.service;
 
+import ru.diasoft.domain.Course;
 import ru.diasoft.domain.Person;
 import ru.diasoft.domain.Student;
+
+import java.util.Set;
 
 public class StudentPrinter implements Printer {
     @Override
@@ -12,7 +15,8 @@ public class StudentPrinter implements Printer {
             System.out.println("Age : " + p.getAge() + "\n" +
                     "Phone : " + p.getPhone() + "\n" +
                     "Group : " + ((Student) p).getGroup() + "\n" +
-                    "Score: " + ((Student) p).getScore() + "\n");
+                    "Score: " + ((Student) p).getScore() + "\n" +
+                    "Courses: " + ((Student) p).getCourses());
         }
     }
 }

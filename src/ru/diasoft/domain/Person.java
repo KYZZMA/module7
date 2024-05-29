@@ -6,14 +6,14 @@ public class Person {
     private int age;
     private String phone = "Undefined";
 
-    public Person(String firstName, String secondName, int age, String phone){
+    public Person(String firstName, String secondName, int age, String phone) {
         this.firstName = firstName;
         this.secondName = secondName;
         setAge(age);
         setPhone(phone);
     }
 
-    public Person(String firstName, String secondName, int age){
+    public Person(String firstName, String secondName, int age) {
         this.firstName = firstName;
         this.secondName = secondName;
         setAge(age);
@@ -30,6 +30,7 @@ public class Person {
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         if (age > 0 && age < 150)
             this.age = age;
