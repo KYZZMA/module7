@@ -7,7 +7,13 @@ public class StudentRepository {
     private StudentCourses studentCourses = new StudentCourses();
     private Faculty faculty = new Faculty();
 
-    {
+    public void addFacultyAll(){
+        studentCourses.addStudentCourses1();
+        studentCourses.addStudentCourses2();
+        studentCourses.addStudentCourses3();
+        studentCourses.addStudentCourses4();
+        studentCourses.addStudentCourses5();
+
         faculty.addStudent(new Student("Pasha", "Vetrov", 20,
                 "8937444444", "ГЭБО1", 4.7, studentCourses.getStudentCourses1()));
 

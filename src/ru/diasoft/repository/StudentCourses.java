@@ -2,13 +2,15 @@ package ru.diasoft.repository;
 
 import ru.diasoft.domain.Course;
 
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
 public class StudentCourses {
-    private Set<Course> studentCourses1 = new TreeSet<>();
+    private Comparator<Course> comparator = (s1, s2) -> s2.getCourseName().compareTo(s1.getCourseName());
+    private Set<Course> studentCourses1 = new TreeSet<>(comparator);
 
-    {
+    void addStudentCourses1(){
         studentCourses1.add(new Course("математика", 4));
         studentCourses1.add(new Course("экономика", 5));
         studentCourses1.add(new Course("информатика", 3));
@@ -16,34 +18,34 @@ public class StudentCourses {
         studentCourses1.add(new Course("алгебра", 3));
     }
 
-    private Set<Course> studentCourses2 = new TreeSet<>();
+    private Set<Course> studentCourses2 = new TreeSet<>(comparator);
 
-    {
+    void addStudentCourses2(){
         studentCourses2.add(new Course("математика", 3));
         studentCourses2.add(new Course("экономика", 4));
         studentCourses2.add(new Course("информатика", 5));
         studentCourses2.add(new Course("алгебра", 5));
     }
 
-    private Set<Course> studentCourses3 = new TreeSet<>();
+    private Set<Course> studentCourses3 = new TreeSet<>(comparator);
 
-    {
+    void addStudentCourses3(){
         studentCourses3.add(new Course("математика", 3));
         studentCourses3.add(new Course("ботаника", 4));
         studentCourses3.add(new Course("алгебра", 5));
     }
 
-    private Set<Course> studentCourses4 = new TreeSet<>();
+    private Set<Course> studentCourses4 = new TreeSet<>(comparator);
 
-    {
+    void addStudentCourses4(){
         studentCourses4.add(new Course("информатика", 5));
         studentCourses4.add(new Course("ботаника", 4));
         studentCourses4.add(new Course("алгебра", 5));
     }
 
-    private Set<Course> studentCourses5 = new TreeSet<>();
+    private Set<Course> studentCourses5 = new TreeSet<>(comparator);
 
-    {
+    void addStudentCourses5(){
         studentCourses5.add(new Course("математика", 3));
         studentCourses5.add(new Course("экономика", 4));
     }

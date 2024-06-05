@@ -1,6 +1,6 @@
 package ru.diasoft.domain;
 
-public class Course implements Comparable<Course> {
+public class Course {
     private String courseName;
     private int courseScore;
 
@@ -15,11 +15,6 @@ public class Course implements Comparable<Course> {
 
     public int getCourseScore() {
         return courseScore;
-    }
-
-    @Override
-    public int compareTo(Course o) {
-        return o.getCourseName().compareTo(courseName);
     }
 
     @Override
