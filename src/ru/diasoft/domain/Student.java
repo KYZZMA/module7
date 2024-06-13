@@ -46,4 +46,15 @@ public class Student extends Person {
     public Set<Course> getCourses() {
         return courses;
     }
+
+    @Override
+    public String toString() {
+        return  "FirstName : " + getFirstName() + "\n" +
+                "SecondName : " + getSecondName() + "\n" +
+                "Age : " + getAge() + "\n" +
+                "Phone : " + getPhone() + "\n" +
+                "Group : " + getGroup() + "\n" +
+                "Score: " + String.format("%.1f", getScore()) + "\n" +
+                "Courses: " + getCourses();
+    }
 }

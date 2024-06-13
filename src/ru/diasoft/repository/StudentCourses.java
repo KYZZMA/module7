@@ -12,7 +12,7 @@ public class StudentCourses {
 
     void addStudentCourses1(){
         studentCourses1.add(new Course("математика", 4));
-        studentCourses1.add(new Course("экономика", 5));
+        studentCourses1.add(new Course("экономика", 3));
         studentCourses1.add(new Course("информатика", 3));
         studentCourses1.add(new Course("ботаника", 5));
         studentCourses1.add(new Course("алгебра", 3));
@@ -22,9 +22,9 @@ public class StudentCourses {
 
     void addStudentCourses2(){
         studentCourses2.add(new Course("математика", 3));
-        studentCourses2.add(new Course("экономика", 4));
+        studentCourses2.add(new Course("экономика", 3));
         studentCourses2.add(new Course("информатика", 5));
-        studentCourses2.add(new Course("алгебра", 5));
+        studentCourses2.add(new Course("алгебра", 4));
     }
 
     private Set<Course> studentCourses3 = new TreeSet<>(comparator);
@@ -39,15 +39,15 @@ public class StudentCourses {
 
     void addStudentCourses4(){
         studentCourses4.add(new Course("информатика", 5));
-        studentCourses4.add(new Course("ботаника", 4));
+        studentCourses4.add(new Course("ботаника", 5));
         studentCourses4.add(new Course("алгебра", 5));
     }
 
     private Set<Course> studentCourses5 = new TreeSet<>(comparator);
 
     void addStudentCourses5(){
-        studentCourses5.add(new Course("математика", 3));
-        studentCourses5.add(new Course("экономика", 4));
+        studentCourses5.add(new Course("математика", 5));
+        studentCourses5.add(new Course("экономика", 5));
     }
 
     public Set<Course> getStudentCourses1() {
