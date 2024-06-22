@@ -1,14 +1,17 @@
 package ru.diasoft.repository;
 
+import lombok.Getter;
 import ru.diasoft.domain.Faculty;
 import ru.diasoft.domain.Student;
 import ru.diasoft.service.AverageCourseScore;
 
 public class StudentRepository {
     private StudentCourses studentCourses = new StudentCourses();
+
+    @Getter
     private Faculty faculty = new Faculty();
 
-    public void addFacultyAll(){
+    public void addFacultyAll() {
         studentCourses.addStudentCourses1();
         studentCourses.addStudentCourses2();
         studentCourses.addStudentCourses3();
@@ -29,9 +32,5 @@ public class StudentRepository {
 
         faculty.addStudent(new Student("Dima", "Kovrov", 24,
                 "8937414141", "ГЭБО1", AverageCourseScore.averageScore(studentCourses.getStudentCourses5()), studentCourses.getStudentCourses5()));
-    }
-
-    public Faculty getFaculty() {
-        return faculty;
     }
 }

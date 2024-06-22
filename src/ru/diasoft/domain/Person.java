@@ -1,5 +1,8 @@
 package ru.diasoft.domain;
 
+import lombok.Getter;
+
+@Getter
 public class Person {
     private String firstName;
     private String secondName;
@@ -19,25 +22,9 @@ public class Person {
         setAge(age);
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getSecondName() {
-        return secondName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
     public void setAge(int age) {
         if (age > 0 && age < 150)
             this.age = age;
-    }
-
-    public String getPhone() {
-        return phone;
     }
 
     public void setPhone(String phone) {

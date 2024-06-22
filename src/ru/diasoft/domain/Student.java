@@ -1,7 +1,10 @@
 package ru.diasoft.domain;
 
+import lombok.Getter;
+
 import java.util.*;
 
+@Getter
 public class Student extends Person {
     private String group = "Undefined";
     private double score = 0;
@@ -20,14 +23,6 @@ public class Student extends Person {
         setScore(score);
     }
 
-    public String getGroup() {
-        return group;
-    }
-
-    public double getScore() {
-        return score;
-    }
-
     public void setGroup(String group) {
         switch (group) {
             case "ГЭБО1":
@@ -41,10 +36,6 @@ public class Student extends Person {
     public void setScore(double score) {
         if (score >= 2 && score <= 5)
             this.score = score;
-    }
-
-    public Set<Course> getCourses() {
-        return courses;
     }
 
     @Override

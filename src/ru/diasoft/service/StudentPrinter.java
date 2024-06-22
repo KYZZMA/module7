@@ -1,10 +1,7 @@
 package ru.diasoft.service;
 
-import ru.diasoft.domain.Course;
 import ru.diasoft.domain.Person;
 import ru.diasoft.domain.Student;
-
-import java.util.Set;
 
 public class StudentPrinter implements Printer {
     @Override
